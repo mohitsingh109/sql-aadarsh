@@ -1,0 +1,27 @@
+# Data Type
+
+Number:
+    age INTEGER
+
+Money/decima values:
+    course_fee NUMERIC(10, 2)
+    # 10 --> 99999999999.99
+    # 2 --> denote the number after dot
+
+Text:
+    full_name TEXT
+
+Boolean (true/false)
+    email_enabled BOOLEAN
+
+Date:
+    date_of_birth DATE
+
+Timestamp (3 Sep 2026 10:18 PM) (UTC)
+    created_at TIMESTAMPTZ
+
+UUID (Mainly used with PK)
+    student_id UUID
+
+JSON (Later)
+    metadata JSONB
