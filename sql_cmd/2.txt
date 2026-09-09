@@ -25,3 +25,6 @@ UUID (Mainly used with PK)
 
 JSON (Later)
     metadata JSONB
+
+BIGSERIAL (Auto increment) (Later)
+    student_id BIGSERIAL PRIMARY KEY

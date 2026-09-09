@@ -1,0 +1,21 @@
+# Constraint
+Rules that protect our db
+
+PRIMARY KEY:
+    student_id UUID PRIMARY KEY;
+
+NOT NULL:
+    full_name TEXT NOT NULL;
+
+UNIQUE:
+    email TEXT UNIQUE;
+
+CHECK:
+    age INTEGER CHECK(age >= 18);
+
+DEFAULT:
+    email_enabled BOOLEAN DEFAULT TRUE;
+    created_at TIMESTAMPTZ DEFAULT NOW();
+
+FOREIGN KEY: (later)
+    course_id UUID REFERENCES courses(course_id);
