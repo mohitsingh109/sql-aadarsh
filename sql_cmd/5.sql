@@ -14,3 +14,10 @@ select
 	email as student_email
 from students;
 
+-- Extract year, month and day from date_of_birth column
+select
+    full_name,
+    extract(year from date_of_birth) as year_birth,
+    extract(month from date_of_birth) as month_birth,
+    extract(day from date_of_birth) as day_birth
+from students;
