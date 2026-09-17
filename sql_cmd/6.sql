@@ -88,3 +88,17 @@ select
     *
 from students
 where address is not null;
+
+-- LIKE vs ILIKE
+
+-- Like Vs ILike
+
+select *
+from students
+where  full_name ilike '%a%';
+
+-- _ wild card
+
+select *
+from students
+where  full_name like 'A__n';
